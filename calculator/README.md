@@ -1,47 +1,18 @@
-# Calculator
+print("=== Simple Calculator ===\n")
 
-A simple command-line calculator for basic arithmetic operations.
+# Get two numbers from user
+num1 = float(input("Enter first number"))
+num2 = float(input("Enter second number"))
 
-## Features
+# Perform calculations
+add = num1 + num2
+subtract = num1 - num2
+multiply = num1 * num2
+divide = num1 / num2
 
-- Addition, subtraction, multiplication, division
-- Input validation
-- Division by zero handling
-- Clean formatted output
+print(f"\n{num1} + {num2} = {add}")
+print(f"{num1} - {num2} = {subtract}")
+print(f"{num1} * {num2} = {multiply}")
+print(f"{num1} / {num2} = {divide:.2f}")
 
-## Usage
-```bash
-python calculator.py
-```
-
-## Example
-```
-========================================
-       SIMPLE CALCULATOR
-========================================
-
-Enter first number: 10
-Enter second number: 5
-
-Results:
-10.0 + 5.0 = 15.0
-10.0 - 5.0 = 5.0
-10.0 × 5.0 = 50.0
-10.0 ÷ 5.0 = 2.0
-```
-
-## What I Learned
-
-- User input with `input()` and type conversion
-- Error handling with try/except
-- F-string formatting for clean output
-- Handling edge cases (division by zero)
-
-## Tech
-
-- Python 3.11+
-- No external dependencies
-
----
-
-*Built: January 2026*
+# Created on 19/01/2026
